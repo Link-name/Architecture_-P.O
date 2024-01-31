@@ -8,8 +8,11 @@ class Chest {
     }
 
     open() {
-        const year = new Date().getFullYear(); // Получение текущего года
-        console.log(`Сундук открыт в ${year} году. Найдено золота: ${this.goldAmount}`);
+        const now = new Date();
+        const year = now.getFullYear(); // Получение текущего года
+        const time = now.toLocaleTimeString(); // Получение текущего времени
+    
+        console.log(`Сундук открыт в ${year} году, в ${time}. Найдено золота: ${this.goldAmount}`);
     }
 }
 
