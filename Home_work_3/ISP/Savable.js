@@ -1,0 +1,3 @@
+class Savable {
+    save() {}
+}
